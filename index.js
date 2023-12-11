@@ -1,11 +1,13 @@
-loadPageIndex()
+loadPageIndex();
+
 async function loadPageIndex() {
     let listPostCreated = await requestPosts();
     content = document.querySelector('#content');
+    let htmlcontent = '';
     for (var i = 0; i < listPostCreated.length; i++){
-        console.log('TEste')
-        console.log(Object.values(listPostCreated[i]))
+        htmlcontent = htmlcontent + (Object.values(listPostCreated[i]).toString().replace(/,/g, ' '));
     }
+    content.innerHTML = htmlcontent;
 }
 
 async function requestPosts() {
@@ -19,10 +21,12 @@ function createPost(listpost) {
     let listformated = []
     for (var i = 0; i < listpost.length; i++){
         let postobj = {
+            post: '<div class="post">',
             title: '<h2 class="title">' + listpost[i].title + '</h2>',
-            posted: '<p class="meta"><small>Posted on '+listpost[i].createdat+'</small></p>',
+            posted: '<p class="meta"><small>Postado em '+listpost[i].createdat+'</small></p>',
             links: '<p class="links">&raquo; <a href="#" class="comments">3 Comments</a> &nbsp;&nbsp; &raquo; <a href="#" class="more">Read More</a></p>',
-            text: '<div class="entry">'+listpost[i].text+'</div>'
+            text: '<div class="entry">'+listpost[i].text+'</div>',
+            endpost: '</div>'
         }
         listformated.push(postobj);
 
