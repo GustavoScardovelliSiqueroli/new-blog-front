@@ -11,6 +11,8 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #203C36;
+	height: 100%;
+	width: 100%;
 }
 
 form {
@@ -161,6 +163,7 @@ img.right {
 
 #content {
 	float: left;
+	margin-bottom: 40px;
 	width: 600px;
 }
 
@@ -214,6 +217,7 @@ img.right {
 	float: right;
 	width: 240px;
 	background: url(images/img04.jpg) repeat-y;
+	margin-bottom: 40px;
 }
 
 #sidebar ul {
@@ -253,9 +257,13 @@ img.right {
 /* Footer */
 
 #footer {
-	clear: both;
-	padding: 40px 0;
 	background: #696B60 url(images/img07.gif) repeat-x;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 40px 0;
+	margin: 0;
 }
 
 #footer p {
