@@ -259,7 +259,7 @@ img.right {
 #footer {
 	background: #696B60 url(images/img07.gif) repeat-x;
 	width: 100%;
-	position: absolute;
+	/* position: absolute; */
 	bottom: 0;
 	left: 0;
 	padding: 40px 0;
