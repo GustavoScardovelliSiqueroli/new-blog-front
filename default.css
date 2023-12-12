@@ -103,13 +103,34 @@ img.right {
 /* Header */
 
 #header {
+	display: flex;
+	flex-direction: column;
 	width: 960px;
 	height: 80px;
 	margin: 5px;
 	background: url(images/img02.jpg);
 }
 
-#header h1 {
+.coluna1{
+	display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+	padding: 3px;
+}
+.titlepage{
+	display: flex;
+	background-color: black;
+	height: 80px;
+}
+.titleblog h1 a{
+	display: flex;
+	font-size: 18px;
+	color: #FFFFFF;
+	
+}
+/* #header h1 {
 	margin: 0;
 	height: 80px;
 	padding: 15px 0 0 20px;
@@ -128,13 +149,12 @@ img.right {
 }
 
 #header b {
-	display: block;
 	letter-spacing: -2px;
 	font-size: 2.4em;
-}
+} */
 
 /* Search */
-
+/* 
 #search {
 	float: right;
 	width: 180px;
@@ -147,7 +167,7 @@ img.right {
 
 #searchsubmit {
 	display: none;
-}
+} */
 
 /* Page */
 
