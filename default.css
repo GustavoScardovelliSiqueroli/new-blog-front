@@ -4,15 +4,13 @@ http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 */
 
-body {
-	margin: 20px 0 0 0;
-	padding: 0;
-	background: #FFFFFF url(images/img01.gif) repeat-x;
+html, body,#wrap {
+	margin:0; 
+	padding:0;  
+	height:100%;
+	/* background: #FFFFFF url(images/img01.gif) repeat-x; */
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
 	color: #203C36;
-	height: 100%;
-	width: 100%;
 }
 
 form {
@@ -107,12 +105,13 @@ img.right {
 #header {
 	width: 960px;
 	height: 80px;
-	margin: 0 auto;
+	margin: 5px;
 	background: url(images/img02.jpg);
 }
 
 #header h1 {
 	margin: 0;
+	height: 80px;
 	padding: 15px 0 0 20px;
 	letter-spacing: normal;
 	font-size: 1em;
@@ -153,8 +152,9 @@ img.right {
 /* Page */
 
 #page {
+	flex: 1;
 	width: 900px;
-	margin: 0 auto;
+	margin: 0 0;
 	padding: 40px 30px;
 	background: url(images/img03.jpg) no-repeat;
 }
@@ -165,6 +165,7 @@ img.right {
 	float: left;
 	margin-bottom: 40px;
 	width: 600px;
+
 }
 
 .post {
@@ -257,13 +258,12 @@ img.right {
 /* Footer */
 
 #footer {
-	background: #696B60 url(images/img07.gif) repeat-x;
-	width: 100%;
-	/* position: absolute; */
-	bottom: 0;
-	left: 0;
+	/* background: #696B60 url(images/img07.gif) repeat-x; */
+	width: 960px;
 	padding: 40px 0;
 	margin: 0;
+	border-radius: 15px 15px 0 0 ;
+	border-top: 10px solid #7AB9AB;
 }
 
 #footer p {
