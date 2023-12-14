@@ -4,10 +4,12 @@ http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 */
 
-html, body,#wrap {
-	margin:0; 
-	padding:0;  
-	height:100%;
+html,
+body,
+#wrap {
+	margin: 0;
+	padding: 0;
+	height: 100%;
 	/* background: #FFFFFF url(images/img01.gif) repeat-x; */
 	font-family: Arial, Helvetica, sans-serif;
 	color: #203C36;
@@ -28,14 +30,17 @@ legend {
 	display: none;
 }
 
-input, textarea {
+input,
+textarea {
 	padding: 2px 5px;
 	border: 1px solid #B8E0D7;
 	font: normal 1em Arial, Helvetica, sans-serif;
 	color: #203C36;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	text-transform: lowercase;
 	color: #203C36;
 }
@@ -53,23 +58,22 @@ h3 {
 	font-size: 1em;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
 	margin-bottom: 1.6em;
 	line-height: 180%;
 }
 
-p {
-}
+p {}
 
 blockquote {
 	font-style: italic;
 }
 
-ul {
-}
+ul {}
 
-ol {
-}
+ol {}
 
 a {
 	color: #7AB9AB;
@@ -79,8 +83,7 @@ a:hover {
 	text-decoration: none;
 }
 
-small {
-}
+small {}
 
 hr {
 	display: none;
@@ -111,25 +114,85 @@ img.right {
 	background: url(images/img02.jpg);
 }
 
-.coluna1{
+.coluna1 {
 	display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-	padding: 3px;
-}
-.titlepage{
-	display: flex;
-	background-color: black;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
 	height: 80px;
+	padding: 6px;
+	text-transform: lowercase;
+	font-weight: bold;
+
 }
-.titleblog h1 a{
+
+.titlepage {
 	display: flex;
+	height: 80px;
+	flex-direction: column;
+
+}
+
+.titleblog {
+	display: flex;
+}
+
+.titleblog h1 {
 	font-size: 18px;
 	color: #FFFFFF;
+	display: contents;
+	text-decoration: none;
+
+}
+
+.titleblog h1 :hover {
+	text-decoration: underline;
+}
+
+.titleblog h1 a {
+	font-size: 18px;
+	color: #FFFFFF;
+	text-decoration: none;
+	letter-spacing: -1px;
+
+}
+
+.titleperson {
+	display: flex;
+	height: 50px;
+	align-items: center;
+	font-size: 25px;
+}
+
+.titleperson b {
+	color: #FFFFFF;
+}
+
+.titleperson a {
+	text-decoration: none;
+}
+
+.titleperson b:hover {
+	text-decoration: underline;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	height: 40px;
+}
+.menu a{
+	color: #FFFFFF;
+	font-size: 18px;
+	text-decoration: none;
 	
 }
+.menu a:hover{
+	text-decoration: underline;
+}
+
 /* #header h1 {
 	margin: 0;
 	height: 80px;
@@ -188,8 +251,7 @@ img.right {
 
 }
 
-.post {
-}
+.post {}
 
 .post .date {
 	margin: 0;
@@ -198,7 +260,8 @@ img.right {
 	color: #999999;
 }
 
-.post .title, .post .meta {
+.post .title,
+.post .meta {
 	display: inline;
 	margin: 0;
 	padding: 0;
@@ -206,8 +269,7 @@ img.right {
 	font: normal 1.6em "Arial Black", Arial, Helvetica, sans-serif;
 }
 
-.post .title {
-}
+.post .title {}
 
 .post .meta {
 	padding-left: 10px;
@@ -282,7 +344,7 @@ img.right {
 	width: 960px;
 	padding: 40px 0;
 	margin: 0;
-	border-radius: 15px 15px 0 0 ;
+	border-radius: 15px 15px 0 0;
 	border-top: 10px solid #7AB9AB;
 }
 
