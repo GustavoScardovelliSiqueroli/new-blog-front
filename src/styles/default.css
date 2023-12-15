@@ -111,7 +111,7 @@ img.right {
 	width: 960px;
 	height: 80px;
 	margin: 5px;
-	background: url(images/img02.jpg);
+	background: url(../images/img02.jpg);
 }
 
 .coluna1 {
@@ -239,7 +239,7 @@ img.right {
 	width: 900px;
 	margin: 0 0;
 	padding: 40px 30px;
-	background: url(images/img03.jpg) no-repeat;
+	background: url(../images/img03.jpg) no-repeat;
 }
 
 /* Content */
@@ -299,7 +299,7 @@ img.right {
 #sidebar {
 	float: right;
 	width: 240px;
-	background: url(images/img04.jpg) repeat-y;
+	background: url(../images/img04.jpg) repeat-y;
 	margin-bottom: 40px;
 }
 
@@ -310,12 +310,12 @@ img.right {
 }
 
 #sidebar li {
-	background: url(images/img05.jpg) no-repeat;
+	background: url(../images/img05.jpg) no-repeat;
 }
 
 #sidebar li ul {
 	padding: 20px 20px 60px 20px;
-	background: url(images/img06.jpg) no-repeat left bottom;
+	background: url(../images/img06.jpg) no-repeat left bottom;
 }
 
 #sidebar li li {
@@ -357,3 +357,44 @@ img.right {
 #footer a {
 	color: #999999;
 }
+
+.registerblog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+}
+.registerblog form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.inputclass {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 50px;
+
+}
+.inputclass h2{
+	margin-right: 50px;
+}
+.inputclass input {
+	display: flex;
+	height: 30px;
+	width: 700px;
+}
+.inputclass textarea {
+	display: flex;
+	height: 120px;
+	width: 700px;
+}
+.submitbutton input{
+	width: 500px;
+	height: 70px;
+	font-size: 25px;
+	color: #7AB9AB;
+	background-color: #B8E0D7;
+}
+
