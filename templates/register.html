@@ -17,6 +17,7 @@
                 <form id="search" method="get" action="#">
                 </form>
                 <div class="menu">
+                    <a href="./login.html">login</a>
                 </div>
                 <div class="titlepage">
                     <div class="titleblog">
@@ -25,7 +26,7 @@
                     </div>
                     <div class="titleperson">
 
-                        <a href="./index.html"><b>Gustavo</b></a></h1>
+                        <a href="./index.html"><b>Register</b></a></h1>
                     </div>
 
                 </div>
@@ -33,17 +34,21 @@
         </div>
         <div id="page">
             <div class="registerblog">
-                <form action="javascript:registerPost();">
+                <form action="javascript:registerUser();">
                     <div class="inputclass">
-                        <h2>Titulo</h1>
-                            <input type="text" id="titleblog" name="titleblog">
+                        <h2>name</h1>
+                            <input type="text" id="nameregister" name="nameregister">
                     </div>
                     <div class="inputclass">
-                        <h2>Texto</h1>
-                            <textarea name="textblog" id="textblog" cols="30" rows="10"></textarea>
+                        <h2>email</h1>
+                            <input type="text" id="emailregister" name="emailregister">
+                    </div>
+                    <div class="inputclass">
+                        <h2>password</h1>
+                            <input type="password" id="passwordregister" name="passwordregister">
                     </div>
                     <div class="submitbutton">
-                        <input type="submit" value="bloggar">
+                        <input type="submit" value="register">
                     </div>
                 </form>
             </div>
@@ -63,6 +68,6 @@
     </div>
 
 </body>
-<script src="../src/scripts/registerpost.js"></script>
+<script src="../src/scripts/registeruser.js"></script>
 
 </html>

@@ -10,9 +10,6 @@ async function loadPageIndex() {
     for (var i = 0; i < listPostCreated.length; i++){
         htmlcontent = htmlcontent + (Object.values(listPostCreated[i]).toString().replace(/,/g, ' '));
     }
-    if(user.isadm == 1){
-        menu.innerHTML = '<a href="./bloggar.html">bloggar</a>';
-    }
     content.innerHTML = htmlcontent;
 }
 
@@ -38,10 +35,4 @@ function createPost(listpost) {
 
     }
     return listformated   
-}
-
-function registerBlog(){
-    titleblog = document.querySelector('#titleblog');
-    textblog = document.querySelector('#textblog');
-    
 }
