@@ -398,3 +398,24 @@ img.right {
 	background-color: #B8E0D7;
 }
 
+.pesquisa{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: space-between;
+	height: 80%;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+.pesquisa a{
+	color: #FFFFFF;
+	font-size: 18px;
+	text-decoration: none;
+}
+.pesquisa a:hover{
+	text-decoration: underline;
+}
+.menuright a{
+	margin-left: 7px;
+}
+
