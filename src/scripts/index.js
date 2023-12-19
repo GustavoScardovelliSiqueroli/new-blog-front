@@ -6,9 +6,9 @@ async function loadPageIndex() {
     if (user){
         let menuright = document.querySelector('#menuright');
         menuright.innerHTML = '<a href="javascript:logout()"> logout</a>';
-    }
-    if (user.isadm == 1) {
-        menu.innerHTML = '<a href="./bloggar.html">bloggar</a>';
+        if (user.isadm == 1) {
+            menu.innerHTML = '<a href="./bloggar.html">bloggar</a>';
+        }
     }
 
     let listPostCreated = await requestPosts();
@@ -27,7 +27,12 @@ async function requestPosts() {
     let url = 'http://127.0.0.1:5000/posts/'
     let resp = await fetch(url)
     let data = await resp.json();
-    return createPost(data.posts)
+    try{
+        return createPost(data.posts)
+    }
+    catch{
+        return ['Ops.. ','Vazio']
+    }
 }
 
 function createPost(listpost) {
